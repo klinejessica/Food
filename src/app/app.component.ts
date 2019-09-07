@@ -12,9 +12,9 @@ export class AppComponent {
  sctOption ='Default Value';
  posts: any = null;
 
-//  constructor(private apiPosts: PostsService) {
-//    this.apiPosts.getPosts().subscribe(data => this.posts = data);
-//    this.apiPosts.addPosts().subscribe(post => this.posts.push(post));
-//  }
+ constructor() {
+  //  this.apiPosts.getPosts().subscribe(data => this.posts = data);
+  //  this.apiPosts.addPosts().subscribe(post => this.posts.push(post));
+ }
  visibleSidebar1;
 }

@@ -6,34 +6,40 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminModule } from './admin/admin.module';
 import { CustomerModule } from './customer/customer.module';
-//import { SimpleDirective } from './simple.directive';
-import {SidebarModule} from 'primeng/sidebar';
-import {ButtonModule} from 'primeng/button';
+import { SimpleDirective } from './simple.directive';
+
+import { AppRoutingModule} from './app-routing.module';
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-//SimpleDirective
-
+    SimpleDirective
+   
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     AdminModule,
     CustomerModule,
     HttpClientModule,
+    AppRoutingModule,
     SidebarModule,
     ButtonModule
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports:[RouterModule]
+  exports: [ RouterModule ]
 })
 export class AppModule { }

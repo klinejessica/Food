@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CardModule } from 'primeng/card';
 
 import { FruitRoutingModule } from './fruit-routing.module';
 import { FruitListComponent } from './fruit-list/fruit-list.component';
@@ -8,7 +9,8 @@ import { FruitListComponent } from './fruit-list/fruit-list.component';
   declarations: [FruitListComponent],
   imports: [
     CommonModule,
-    FruitRoutingModule
+    FruitRoutingModule,
+    CardModule
   ]
 })
 export class FruitModule { }
