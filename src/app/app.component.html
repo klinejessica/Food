@@ -1,33 +1,30 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class ="container">
+<div class="container">
   <button pButton type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right"></button>
   <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
     <div>
-      <h5 style="font-weight:normal; text-align:center" >Welcome, Jessica!</h5>
+      <h5 style="font-weight:normal; text-align:center">Welcome, Jessica!</h5>
     </div>
     <div class="link">
       <a routerLink="/home">Home</a>
     </div>
     <div class="link">
-  <a routerLink="/fruit">Fruit</a>
-</div>
-<div class="link">
-  <a routerLink="/veggies">Veggies</a>
-</div>
-<div class="link">
-  <a routerLink="/plan">Plan</a>
-</div>
-      
+      <a routerLink="/fruit">Fruit</a>
+    </div>
+    <div class="link">
+      <a routerLink="/veggies">Veggies</a>
+    </div>
+    <div class="link">
+      <a routerLink="/plan">Plan</a>
+    </div>
+
   </p-sidebar>
-<div style="text-align:center">
-<h1 appSimple>
-  Welcome to {{ title }}!
-</h1>
+  <div style="text-align:center">
+    <h1 appSimple>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
+
 </div>
 
-<nav>
-  
-</nav>
-
-<router-outlet></router-outlet>
-</div>
+  <router-outlet></router-outlet>

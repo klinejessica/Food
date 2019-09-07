@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanComponent implements OnInit {
 
+  mondayPlan: String;
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }
