@@ -8,17 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-
-
 import { AdminModule } from './admin/admin.module';
 import { CustomerModule } from './customer/customer.module';
+//import { SimpleDirective } from './simple.directive';
 import {SidebarModule} from 'primeng/sidebar';
 import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
     AppComponent,
+//SimpleDirective
 
   ],
   imports: [
@@ -34,6 +33,7 @@ import {ButtonModule} from 'primeng/button';
     ButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports:[RouterModule]
 })
 export class AppModule { }
