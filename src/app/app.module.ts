@@ -14,15 +14,15 @@ import { SimpleDirective } from './simple.directive';
 import { AppRoutingModule} from './app-routing.module';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
-import { GroceryListComponent } from './grocery-list/grocery-list.component';
+import { CarService } from './grocery/Service/carservice';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SimpleDirective,
-    GroceryListComponent
+    SimpleDirective
    
     
   ],
@@ -40,7 +40,7 @@ import { GroceryListComponent } from './grocery-list/grocery-list.component';
     
 
   ],
-  providers: [],
+  providers: [CarService],
   bootstrap: [AppComponent],
   exports: [ RouterModule ]
 })
