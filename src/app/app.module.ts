@@ -12,15 +12,17 @@ import { CustomerModule } from './customer/customer.module';
 import { SimpleDirective } from './simple.directive';
 
 import { AppRoutingModule} from './app-routing.module';
- import { SidebarModule } from 'primeng/sidebar';
- import { ButtonModule } from 'primeng/button';
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
+import { GroceryListComponent } from './grocery-list/grocery-list.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SimpleDirective
+    SimpleDirective,
+    GroceryListComponent
    
     
   ],

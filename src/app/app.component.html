@@ -1,9 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container">
+
   <button pButton type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right"></button>
   <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
     <div>
       <h5 style="font-weight:normal; text-align:center">Welcome, Jessica!</h5>
+    </div>
+    <div>
+      <i class="far fa-user-circle"></i>
     </div>
     <div class="link">
       <a routerLink="/home">Home</a>
@@ -25,6 +28,5 @@
     </h1>
   </div>
 
-</div>
 
   <router-outlet></router-outlet>
