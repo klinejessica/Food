@@ -1,0 +1,17 @@
+{
+    "data": [
+        {"name": "apple", "amount": 2012, "brand": "Orange", "inSeason": "dsad231ff"},
+        {"name": "banana", "amount": 2011, "brand": "Black", "inSeason": "gwregre345"},
+        {"name": "canteloupe", "amount": 2005, "brand": "Gray", "inSeason": "h354htr"},
+        {"name": "dragonfruit", "amount": 2003, "brand": "Blue", "inSeason": "j6w54qgh"},
+        {"name": "fig", "amount": 1995, "brand": "Orange", "inSeason": "hrtwy34"},
+        {"name": "grapes", "amount": 2005, "brand": "Black", "inSeason": "jejtyj"},
+        {"name": "lime", "amount": 2012, "brand": "Yellow", "inSeason": "g43gr"},
+        {"name": "mandarin", "amount": 2013, "brand": "Orange", "inSeason": "greg34"},
+        {"name": "mango", "amount": 2000, "brand": "Black", "inSeason": "h54hw5"},
+        {"name": "pineapple", "amount": 2013, "brand": "Red", "inSeason": "245t2s"},
+        {"name": "plum", "amount": 2013, "brand": "Orange", "inSeason": "greg34"},
+        {"name": "raspberries", "amount": 2000, "brand": "Black", "inSeason": "h54hw5"},
+        {"name": "strawberry", "amount": 2013, "brand": "Red", "inSeason": "245t2s"}
+    ]
+}

@@ -9,7 +9,7 @@ export class CarService{
     constructor(private http: HttpClient) { }
 
     getCarsSmall() {
-        return this.http.get<any>('assets/showcase/data/cars-small.json')
+        return this.http.get<any>('assets/data/items.json')
         .toPromise()
         .then(res => <Car[]>res.data)
         .then(data => { return data;});

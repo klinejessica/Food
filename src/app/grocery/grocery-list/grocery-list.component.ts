@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Car } from '../classes/car';
 
+
 import { CarService } from '../Service/carservice';
 
 @Component({
@@ -43,7 +44,7 @@ dragStart(event,car: Car) {
     findIndex(car: Car) {
         let index = -1;
         for(let i = 0; i < this.availableCars.length; i++) {
-            if(car.vin === this.availableCars[i].vin) {
+            if(car.inSeason === this.availableCars[i].inSeason) {
                 index = i;
                 break;
             }
