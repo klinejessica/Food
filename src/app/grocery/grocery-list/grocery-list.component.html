@@ -8,6 +8,7 @@
                 (onDragStart)="dragStart($event,car)" (onDragEnd)="dragEnd($event)">
                 <i class="fa fa-arrows fa-2x" style="float:right;margin-top:8px"></i>
                 <img src="assets/images/fruit/{{car.name}}.jpeg" style="float:left" draggable="false">
+                <img src="assets/images/veg/{{car.name}}.jpeg" style="float:left" draggable="false">
                 <div style="margin:8px 0 0 8px;float:left">{{car.name}} - {{car.inSeason}}</div>
                 Amount: <input type="text" pInputText />
             </li>
