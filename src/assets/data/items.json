@@ -24,6 +24,12 @@
         {"name": "peas", "amount": 2000, "brand": "Black", "inSeason": "h54hw5"},
         {"name": "pepper", "amount": 2013, "brand": "Red", "inSeason": "245t2s"},
         {"name": "squash", "amount": 2013, "brand": "Orange", "inSeason": "greg34"},
-        {"name": "Zucchini", "amount": 2013, "brand": "Red", "inSeason": "245t2s"}
+        {"name": "zucchini", "amount": 2013, "brand": "Red", "inSeason": "245t2s"},
+        {"name": "bread", "amount": 2012, "brand": "Yellow", "inSeason": "g43gr"},
+        {"name": "granola", "amount": 2013, "brand": "Orange", "inSeason": "greg34"},
+        {"name": "museli", "amount": 2000, "brand": "Black", "inSeason": "h54hw5"},
+        {"name": "oats", "amount": 2013, "brand": "Red", "inSeason": "245t2s"},
+        {"name": "pasta", "amount": 2013, "brand": "Orange", "inSeason": "greg34"},
+        {"name": "rice", "amount": 2013, "brand": "Red", "inSeason": "245t2s"}
     ]
 }

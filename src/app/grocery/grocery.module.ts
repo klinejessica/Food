@@ -5,6 +5,8 @@ import { GroceryListComponent } from './grocery-list/grocery-list.component';
 import {DragDropModule} from 'primeng/dragdrop';
 import {PanelModule} from 'primeng/panel';
 import {TableModule} from 'primeng/table';
+import {ButtonModule} from 'primeng/button';
+
 
 @NgModule({
   declarations: [GroceryListComponent],
@@ -13,7 +15,8 @@ import {TableModule} from 'primeng/table';
     GroceryRoutingModule,
     DragDropModule,
     TableModule,
-    PanelModule
+    PanelModule,
+    ButtonModule
   ]
 })
 export class GroceryModule { }
