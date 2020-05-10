@@ -1,36 +1,70 @@
+<h5>Monday</h5>
+{{mondayPlan}}
+<h5>Tuesday</h5>
+{{tuesdayPlan}}
+<h5>Wednesday</h5>
+{{WednesdayPlan}}
+<h5>Thursday</h5>
+{{thursdayPlan}}
+<h5>Friday</h5>
+{{fridayPlan}}
+<h5>Saturday</h5>
+{{saturdayPlan}}
+<h5>Sunday</h5>
+{{SundayPlan}}
+
+
 <h2>Monday</h2>
+<!-- <input #mon [innerHTML]="mondayPlan">
+{{mon}}-->
 
-<textarea rows="4" cols="200" pInputTextarea >
-   Breakfast:
-   Lunch:
-   Dinner:
-   Snack(s):
-</textarea>
 
-<p-button label="Cancel" class="ui-button-raised ui-button-secondary"></p-button>
-<p-button label="Save"></p-button>
+<!-- {{mon.mondayPlan}} -->
+<!-- 
+<input [(ngModel)]="mondayPlan"> -->
+<!-- (keyup.enter)="saveMonday($event)"> -->
+
+
+<textarea [(ngModel)]="mondayPlan" rows="4" cols="200" pInputTextarea>
+   
+      Breakfast:
+       Lunch:
+       Dinner:
+       Snack(s):
+   
+    </textarea>
+  
+<br>
+<p-button label="Cancel" class="ui-button-raised ui-button-secondary" (click)="cancelMonday(mondayPlan)"></p-button>
+<p-button label="Save" (click)="saveMonday(mondayPlan)"></p-button>
+ 
+
+<br>
 
 <h2>Tuesday</h2>
-<textarea rows="4" cols="200" pInputTextarea >
-    Breakfast:
+<textarea [(ngModel)]="tuesdayPlan" rows="4" cols="200" pInputTextarea>
+   
+   Breakfast:
     Lunch:
     Dinner:
     Snack(s):
+
  </textarea>
- 
+
+ <br>
  <p-button label="Cancel" class="ui-button-raised ui-button-secondary"></p-button>
- <p-button label="Save"></p-button>
+ <p-button label="Save" (click)="saveTuesday(tuesdayPlan)"></p-button>
 
 <h2>Wednesday</h2>
-<textarea rows="4" cols="200" pInputTextarea >
+<textarea [(ngModel)]="wednesdayPlan" rows="4" cols="200" pInputTextarea >
     Breakfast:
     Lunch:
     Dinner:
     Snack(s):
  </textarea>
- 
+ <br>
  <p-button label="Cancel" class="ui-button-raised ui-button-secondary"></p-button>
- <p-button label="Save"></p-button>
+ <p-button label="Save" (click)="saveWednesday()"></p-button>
 
 <h2>Thursday</h2>
 <textarea rows="4" cols="200" pInputTextarea >
@@ -39,9 +73,9 @@
    Dinner:
    Snack(s):
 </textarea>
-
+<br>
 <p-button label="Cancel" class="ui-button-raised ui-button-secondary"></p-button>
-<p-button label="Save"></p-button>
+<p-button label="Save" (click)="saveThursday()"></p-button>
 
 <h2>Friday</h2>
 <textarea rows="4" cols="200" pInputTextarea >
@@ -50,9 +84,9 @@
     Dinner:
     Snack(s):
  </textarea>
- 
+ <br>
  <p-button label="Cancel" class="ui-button-raised ui-button-secondary"></p-button>
- <p-button label="Save"></p-button>
+ <p-button label="Save" (click)="saveFriday()"></p-button>
 
 <h2>Saturday</h2>
 <textarea rows="4" cols="200" pInputTextarea >
@@ -61,9 +95,9 @@
     Dinner:
     Snack(s):
  </textarea>
- 
+ <br>
  <p-button label="Cancel" class="ui-button-raised ui-button-secondary"></p-button>
- <p-button label="Save"></p-button>
+ <p-button label="Save" (click)="saveSaturday()"></p-button>
 
 <h2>Sunday</h2>
 
@@ -73,6 +107,6 @@
     Dinner:
     Snack(s):
  </textarea>
- 
+ <br>
  <p-button label="Cancel" class="ui-button-raised ui-button-secondary"></p-button>
- <p-button label="Save"></p-button>
+ <p-button label="Save" (click)="saveSunday()"></p-button>

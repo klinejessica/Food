@@ -15,6 +15,9 @@ import { AppRoutingModule} from './app-routing.module';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { CarService } from './grocery/Service/carservice';
+import { LoginComponent } from './login/login.component';
+import { NavigationComponent } from './navigation/navigation.component';
+
 
 
 
@@ -22,7 +25,9 @@ import { CarService } from './grocery/Service/carservice';
 @NgModule({
   declarations: [
     AppComponent,
-    SimpleDirective
+    SimpleDirective,
+    LoginComponent,
+    NavigationComponent
    
     
   ],
@@ -36,7 +41,8 @@ import { CarService } from './grocery/Service/carservice';
     HttpClientModule,
     AppRoutingModule,
      SidebarModule,
-     ButtonModule
+     ButtonModule,
+    
     
 
   ],
