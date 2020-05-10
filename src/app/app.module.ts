@@ -14,7 +14,7 @@ import { SimpleDirective } from './simple.directive';
 import { AppRoutingModule} from './app-routing.module';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
-import { CarService } from './grocery/Service/carservice';
+import { ItemService } from './grocery/Service/itemservice';
 import { LoginComponent } from './login/login.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
@@ -46,7 +46,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     
 
   ],
-  providers: [CarService],
+  providers: [ItemService],
   bootstrap: [AppComponent],
   exports: [ RouterModule ]
 })

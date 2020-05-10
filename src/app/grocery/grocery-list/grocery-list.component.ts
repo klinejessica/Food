@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Car } from '../classes/car';
+import { Item } from '../classes/item';
 
 
-import { CarService } from '../Service/carservice';
+import { ItemService } from '../Service/itemservice';
 
 @Component({
   selector: 'app-grocery-list',
@@ -12,39 +12,39 @@ import { CarService } from '../Service/carservice';
 export class GroceryListComponent implements OnInit {
 
 
-  availableCars: Car[];
+  availableItems: Item[];
 
-  selectedCars: Car[];
+  selectedItems: Item[];
 
-  draggedCar: Car;
+  draggedItem: Item;
 
-  constructor(private carService: CarService) { }
+  constructor(private itemService: ItemService) { }
 
   ngOnInit() {
-    this.selectedCars = [];
-        this.carService.getCarsSmall().then(cars => this.availableCars = cars);
+    this.selectedItems = [];
+        this.itemService.getItemsSmall().then(items => this.availableItems = items);
   }
-dragStart(event,car: Car) {
-        this.draggedCar = car;
+dragStart(event,item: Item) {
+        this.draggedItem = item;
     }
 
     drop(event) {
-        if(this.draggedCar) {
-            let draggedCarIndex = this.findIndex(this.draggedCar);
-            this.selectedCars = [...this.selectedCars, this.draggedCar];
-            this.availableCars = this.availableCars.filter((val,i) => i!=draggedCarIndex);
-            this.draggedCar = null;
+        if(this.draggedItem) {
+            let draggedItemIndex = this.findIndex(this.draggedItem);
+            this.selectedItems = [...this.selectedItems, this.draggedItem];
+            this.availableItems = this.availableItems.filter((val,i) => i!=draggedItemIndex);
+            this.draggedItem = null;
         }
     }
 
     dragEnd(event) {
-        this.draggedCar = null;
+        this.draggedItem = null;
     }
 
-    findIndex(car: Car) {
+    findIndex(item: Item) {
         let index = -1;
-        for(let i = 0; i < this.availableCars.length; i++) {
-            if(car.inSeason === this.availableCars[i].inSeason) {
+        for(let i = 0; i < this.availableItems.length; i++) {
+            if(item.inSeason === this.availableItems[i].inSeason) {
                 index = i;
                 break;
             }
