@@ -1,28 +1,29 @@
 <h3>Grocery List</h3>
 <div class="container ui-g">
-    
-    
+
+
     <div class="ui-g-12 ui-md-6 ui-g-nopad drag-column">
-        <ul style="margin:0;padding:0">
-            <li *ngFor="let item of availableItems" class="ui-helper-clearfix" pDraggable="items"
+        <div style="margin:0;padding:0">
+            <div *ngFor="let item of availableItems" class="ui-helper-clearfix" pDraggable="items"
                 (onDragStart)="dragStart($event,item)" (onDragEnd)="dragEnd($event)">
-                <i class="fa fa-arrows fa-2x" style="float:right;margin-top:8px"></i>
-                <img src="assets/images/fruit/{{item.name}}.jpeg" style="float:left;width: 150px;" draggable="false">
-                <img src="assets/images/veg/{{item.name}}.jpeg" style="float:left;width: 150px;" draggable="false">
-                <img src="assets/images/grains/{{item.name}}.jpeg" style="float:left;width: 150px;" draggable="false">
-                <div style="margin:8px 0 0 8px;">{{item.name}} - {{item.inSeason}}</div>
+                <img src="assets/images/{{item.name}}.jpeg" style="float:left;width: 150px;" draggable="false">
+           
+                {{item.name}}
+                <div>
                 Amount: <input type="text" pInputText />
-            </li>
-        </ul>
+            </div>
+            </div>
+        </div>
     </div>
-    <div class="ui-g-12 ui-md-6 drop-column" pDroppable="items" 
-        (onDrop)="drop($event)" [ngClass]="{'ui-highlight-item':draggedItem}">
+
+    <div class="ui-g-12 ui-md-6 drop-column" pDroppable="items" (onDrop)="drop($event)"
+        [ngClass]="{'ui-highlight-item':draggedItem}">
         <p-table [value]="selectedItems">
             <ng-template pTemplate="header">
                 <tr>
                     <th>Name</th>
                     <th>Amount</th>
-                    <th>Brand</th>
+                    <th>Category</th>
                     <th>In Season</th>
                 </tr>
             </ng-template>
@@ -30,7 +31,7 @@
                 <tr>
                     <td>{{item.name}}</td>
                     <td>{{item.amount}}</td>
-                    <td>{{item.brand}}</td>
+                    <td>{{item.category}}</td>
                     <td>{{item.inSeason}}</td>
                 </tr>
             </ng-template>
