@@ -14,6 +14,7 @@ import { SimpleDirective } from './simple.directive';
 import { AppRoutingModule} from './app-routing.module';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
+import { TimelineModule } from 'primeng/timeline';
 import { ItemService } from './grocery/Service/itemservice';
 import { LoginComponent } from './login/login.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -42,6 +43,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     AppRoutingModule,
      SidebarModule,
      ButtonModule,
+     TimelineModule
     
     
 
